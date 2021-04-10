@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- css links -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet"href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+	  
+	  <title>hello</title>
+</head>
+<body>
+<header>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<h1 class="text-info">click the button to change the text</h1>
+				<button  type="button" class="btn btn-primary" onclick="textChange()">click me!</button>
+				<h2 id="text">welcome</h2>
+			</div>
+		</div>
+	</div>
+</header>
+  <script>
+    	function textChange(){
+    		 
+    		 document.getElementById('text').innerHTML="Hello There";
+    	}
+
+
+    </script>
+    <!-- end -->
+    <!-- start -->
+ <div class="function1">
+ 	<div class="container">
+ 	<div class="row">
+ 		<div class="col-lg-12">
+ 			<h3>A demonstration of how to access an ABBR element</h3>
+             <p>The <abbr id="myAbbr" title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+             <p>Click the button to get the abbreviation of "WHO".</p>
+            <button type="button" class="btn btn-warning" onclick="myFunction()">click</button>
+             <p id="demo"></p>
+     </div>
+    </div>
+  </div>
+</div>
+           <script>
+               function myFunction() {
+              var x = document.getElementById("myAbbr").title;
+              document.getElementById("demo").innerHTML =x;
+             }
+            </script>
+            <!-- end -->
+            <!-- start -->
+<div class="function2">
+ 	<div class="container">
+ 		<div class="row">
+ 			<div class="col-lg-12">
+ 				<h3>A demonstration of how to access a Date field</h3>
+               <input type="date" id="myDate" value="2014-02-09">
+               <p>Click the button to get the date of the date field.</p>
+                <button type="button" class="btn btn-info" onclick="myFunction()">Try it</button>
+                <p><strong>Note:</strong> input elements with type="date" do not show as any date field/calendar in IE 11 and earlier versions.</p>
+                <p id="p"></p>
+
+ 			</div>
+ 		</div>
+ 	</div>
+ </div>          
+   
+             <script>
+                function myFunction() {
+                var x = document.getElementById("myDate").value;
+               document.getElementById("p").innerHTML = x;
+              }
+             </script>
+             <!-- start -->
+ <section class="function3">
+ 	<div class="container">
+ 		<div class="row">
+ 			<div class="col-lg-12">
+ 				
+ 			</div>
+ 		</div>
+ 	</div>
+ </section>            
+             <!-- end -->
+             <!-- start -->
+             <div class="function3">
+             	<div class="container">
+             		<div class="row">
+             			<div class="col-lg-12">
+             				<p>Click the button to open the dialog window.</p>
+                              <button type="button" class="btn btn-danger" onclick="myFunction()">Try it</button>
+                                <p><b>Note:</b> The dialog element is only supported in Chrome 37+, Safari 6+ and Opera 24+.</p>
+                                <dialog id="myDialog">This is an open dialog window</dialog>
+             			</div>
+             		</div>
+             	</div>
+             </div>
+             <script>
+               function myFunction() {
+              var x = document.getElementById("myDialog");
+              x.open = true;
+            }
+             </script>
+             <!-- end -->
+             <!-- start -->
+             <div class="function4">
+             	<div class="container">
+             		<div class="row">
+             			<div class="col-lg-12">
+             				<h3>A demonstration of how to access a FIELDSET element</h3>
+                                  <fieldset id="myFieldset" name="personalia">
+                                       Name: <input type="text" name="username"><br>
+                                       Email: <input type="text" name="usermail"><br>
+                                  </fieldset>
+                             <p>Click the button to disable the fieldset.</p>
+                             <button type="button" class="btn btn-primary" onclick="myFunction()">Try it</button>
+             			</div>
+             		</div>
+             	</div>
+             </div>
+             <script>
+              function myFunction() {
+               var x = document.getElementById("myFieldset");
+                x.disabled = true;
+                }
+            </script>
+             <!-- end -->
+             <!-- start -->
+             <div class="function5">
+             	<div class="container">
+             		<div class="row">
+             			<div class="col-lg-12">
+             				<h3>A demonstration of how to access a FIGCAPTION element</h3>
+                             <figure>
+                              <img src="images/green.jpg" alt="green" width="304" height="228">
+                             <figcaption id="myFigCap">Fig.1 -  blue eyes behind the leaf.</figcaption>
+                             </figure>
+                            <p>Click the button to set the color of the caption to red.</p>
+                             <button type="button"  class="btn btn-danger" onclick="myFunction()">Try it</button>
+             			</div>
+             		</div>
+             	</div>
+             </div>
+                    <script>
+                          function myFunction() {
+                          var x = document.getElementById("myFigCap");
+                          x.style.color = "red";
+                         }
+                   </script>
+                   <!-- end -->
+                   <!-- start -->
+                   <div class="function6">
+                   	<div class="container">
+                   		<div class="row">
+                   			<div class="col-lg-12">
+                   				<h3>A demonstration of how to access a Checkbox</h3>
+                                   Checkbox: <input type="checkbox" id="myCheck">
+                                <p>Click the "Try it" button to check the checkbox.</p>
+                                  <button type="button" class="btn btn-success" onclick="myFunction()">Try it</button>
+                   			</div>
+                   		</div>
+                   	</div>
+                   </div>
+                     <script>
+
+                       function myFunction() {
+
+                         var x = document.getElementById("myCheck");
+
+                          x.checked = true;
+                         }
+                     </script>
+                   <!-- end -->
+                   <!-- start -->
+          <div class="function7">
+             <div class="container">
+               <div class="row">
+                <div class="cl-lg-12">         
+                   <h3>A demonstration of how to access a Color picker</h3>
+                      Select your favorite color: <input type="color" id="myColor">
+                   <p>Click the "Try it" button to get the color of the color picker.</p>
+                     <button type="button" class="btn btn-danger" onclick="myFunction()">Try it</button>
+                   <p><b>Note:</b> type="color" is not supported in Internet Explorer 11 and earlier versions or Safari 9.1 and earlier versions.</p>
+                   <p id="demo"></p>
+                </div>
+               </div> 
+             </div>
+           </div>
+
+               <script>
+
+              function myFunction() {
+
+                  var x = document.getElementById("myColor").value;
+                   document.getElementById("demo").innerHTML = x;
+                }
+               </script>
+                   <!-- end -->
+                   <!-- start -->
+                   <div class="function8">
+                   	<div class="container">
+                   		<div class="row">
+                   			<div class="col-lg-12">
+                   				<h3>A demonstration of how to access an Email field</h3>
+                               E-mail: <input type="email" id="myEmail" value="john@example.com">
+                              <p>Click the button to get the e-mail address of the email field.</p>
+                                <button type="button" class="btn btn-info" onclick="myFunction()">Try it</button>
+                               <p id="demo"></p>
+                   			</div>
+                   		</div>
+                   	</div>
+                   </div>
+
+
+                   <script>
+                     function myFunction() {
+                      var x = document.getElementById("myEmail").value;
+                      document.getElementById("demo").innerHTML = x;
+                     }
+                 </script>
+                 
+                   <!-- end -->
+                  <!-- start -->
+                  <div class="function9">
+                  	<div class="container">
+                  		<div class="row">
+                  			<div class="col-lg-12">
+                  				<h3>A demonstration of how to access a Submit Button</h3>
+                                <input type="submit" class="btn-danger" id="mySubmit" value="Submit the form">
+                                <p>Click the "Try it" button to get the text displayed on the submit button.</p>
+                                <button type="submit" class="btn btn-info" onclick="myFunction()">Try it</button>
+                                <p id="demo"></p>
+                  			</div>
+                  		</div>
+                  	</div>
+                  </div>
+
+
+
+                  <script>
+                   function myFunction() {
+                   var x = document.getElementById("mySubmit").value;
+                  document.getElementById("demo").innerHTML = x;
+                  }
+                  </script>
+                  <!-- end -->
+                  <!-- start -->
+             <section class="function11">
+             	<div class="container">
+             		<div class="row">
+             			<div class="col-lg-12">
+                              <h3>A demonstration of how to access a Password Field</h3>
+                                Password: <input type="password" id="myPsw" value="psw123">
+                              <p>Click the button to get the password of the password field.</p>
+                              <button type="button" class="btn btn-primary" onclick="myFunction()">Try it</button>
+                              <p id="p"></p>
+             			</div>
+             		</div>
+             	</div>
+             </section>
+
+             <script>
+                function myFunction() {
+                 var x = document.getElementById("myPsw").value;
+                 document.getElementById("p").innerHTML = x;
+                }
+             </script>
+
+                 <!-- end -->
+         
+             
+<!-- js links -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
